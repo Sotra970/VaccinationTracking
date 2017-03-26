@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toolbar">#23110D</color>
+
+
+    <color name="gray50">#FAFAFA</color>
+    <color name="gray100">#f5f5f5</color>
+    <color name="gray200">#eeeeee</color>
+    <color name="gray300">#c9c9c9</color>
+    <color name="gray500">#bababa</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="black">#000000</color>
+    <color name="scrim">#99323232</color>
+    <color name="bg">#0e9bd4</color>
+    <color name="white">#fff</color>
+
+</resources>

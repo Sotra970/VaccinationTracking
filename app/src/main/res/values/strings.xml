@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VaccinationTracking</string>
+    <string name="title_activity_show_kids">ShowKidsActivity</string>
+    <string name="google_maps_key">AIzaSyC5sfQg7BpGM4PoG5Y5Dty_ko7F1Fak5C8</string>
+
+</resources>

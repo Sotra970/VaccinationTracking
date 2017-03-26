@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_vaccinationtracking" default="compile.module.vaccinationtracking">
+  <dirname property="module.vaccinationtracking.basedir" file="${ant.file.module_vaccinationtracking}"/>
+  
+  <property name="module.jdk.home.vaccinationtracking" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.vaccinationtracking" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.vaccinationtracking" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.vaccinationtracking" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="vaccinationtracking.output.dir" value="${module.vaccinationtracking.basedir}/build/classes/production/VaccinationTracking"/>
+  <property name="vaccinationtracking.testoutput.dir" value="${module.vaccinationtracking.basedir}/build/classes/test/VaccinationTracking"/>
+  
+  <path id="vaccinationtracking.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="vaccinationtracking.module.production.classpath">
+    <path refid="${module.jdk.classpath.vaccinationtracking}"/>
+  </path>
+  
+  <path id="vaccinationtracking.runtime.production.module.classpath">
+    <pathelement location="${vaccinationtracking.output.dir}"/>
+  </path>
+  
+  <path id="vaccinationtracking.module.classpath">
+    <path refid="${module.jdk.classpath.vaccinationtracking}"/>
+    <pathelement location="${vaccinationtracking.output.dir}"/>
+  </path>
+  
+  <path id="vaccinationtracking.runtime.module.classpath">
+    <pathelement location="${vaccinationtracking.testoutput.dir}"/>
+    <pathelement location="${vaccinationtracking.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.vaccinationtracking">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.vaccinationtracking">
+    <patternset refid="excluded.from.module.vaccinationtracking"/>
+  </patternset>
+  
+  
+  <target name="compile.module.vaccinationtracking" depends="compile.module.vaccinationtracking.production,compile.module.vaccinationtracking.tests" description="Compile module VaccinationTracking"/>
+  
+  <target name="compile.module.vaccinationtracking.production" depends="register.custom.compilers" description="Compile module VaccinationTracking; production classes"/>
+  
+  <target name="compile.module.vaccinationtracking.tests" depends="register.custom.compilers,compile.module.vaccinationtracking.production" description="compile module VaccinationTracking; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.vaccinationtracking" description="cleanup module">
+    <delete dir="${vaccinationtracking.output.dir}"/>
+    <delete dir="${vaccinationtracking.testoutput.dir}"/>
+  </target>
+</project>

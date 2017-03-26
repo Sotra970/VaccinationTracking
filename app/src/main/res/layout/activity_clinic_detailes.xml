@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ebada.vaccinationtracking.ClinicDetailesActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar3"
+            layout="@layout/toolbar2"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:paddingRight="12dp"
+                            android:paddingLeft="12dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/clinic"
+                            android:maxHeight="184dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        //start
+                        <LinearLayout
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center|left"
+                                android:layout_width="108dp"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_local_hospital_white_24dp"
+                                    android:tint="@color/colorPrimaryDark"
+                                    android:adjustViewBounds="true"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp" />
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:text="Name"
+                                    android:textSize="18sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <TextView
+                                android:text="name"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorSecondaryText"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center"
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        //end
+
+                        //start
+                        <LinearLayout
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="left|center"
+                                android:layout_width="108dp"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_call_white_24dp"
+                                    android:tint="@color/colorPrimaryDark"
+                                    android:adjustViewBounds="true"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp" />
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:text="Phone"
+                                    android:textSize="18sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <TextView
+                                android:text="name"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorSecondaryText"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center"
+                                android:id="@+id/phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        //end
+
+                        //start
+                        <LinearLayout
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center|left"
+                                android:layout_width="108dp"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/ic_person_pin_circle_white_24dp"
+                                    android:tint="@color/colorPrimaryDark"
+                                    android:adjustViewBounds="true"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp" />
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:text="Address"
+                                    android:textSize="18sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <TextView
+                                android:text="name"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorSecondaryText"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center"
+                                android:id="@+id/address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        //end
+
+                        //start
+                        <LinearLayout
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center|left"
+                                android:layout_width="108dp"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:src="@drawable/way"
+                                    android:tint="@color/colorPrimaryDark"
+                                    android:adjustViewBounds="true"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp" />
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:text="Distance"
+                                    android:textSize="18sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <TextView
+                                android:text="name"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorSecondaryText"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center"
+                                android:id="@+id/distance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        //end
+
+
+
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </android.support.v7.widget.CardView>
+
+            <com.example.ebada.vaccinationtracking.ExpandableHeightListView
+                android:layout_marginBottom="24dp"
+                android:divider="@null"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/vacs_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

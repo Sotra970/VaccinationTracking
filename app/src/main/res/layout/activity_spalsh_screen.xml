@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_spalsh_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient_background"
+    tools:context="com.example.ebada.vaccinationtracking.SpalshScreen"
+    >
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/syringe_96"/>
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Vaccination Tracking"
+            android:id="@+id/font"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </LinearLayout>
+</FrameLayout>
+    <!--background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);-->

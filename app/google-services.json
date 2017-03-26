@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "742460210024",
+    "firebase_url": "https://vaccinationtracking.firebaseio.com",
+    "project_id": "vaccinationtracking",
+    "storage_bucket": "vaccinationtracking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742460210024:android:496a61197522be8b",
+        "android_client_info": {
+          "package_name": "com.example.ebada.vaccinationtracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742460210024-1unkbidgiso5l9bhsbvdfqh5t4eig2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoFzslnHPfplBdAPiTxfaq8ogU3pCHBAI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
